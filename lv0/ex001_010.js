@@ -58,3 +58,25 @@ function ex7(angle) {
 // function solution(angle) {
 //   return [0, 90, 91, 180].filter((x) => angle >= x).length;
 // }
+
+// 두 수의 나눗셈
+function ex8(num1, num2) {
+  return Math.floor((num1 / num2) * 1000);
+}
+
+// 짝수의 합
+function ex9(n) {
+  let a = 0;
+  for (let i = 0; i <= n; i++) {
+    if (i % 2 === 0) {
+      a += i;
+    }
+  }
+  return (answer = a);
+}
+
+// 배열의 평균값
+function ex10(num) {
+  const a = num.reduce((acc, val) => (acc += val), 0);
+  return a / num.length;
+}
